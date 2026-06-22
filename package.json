@@ -1,0 +1,71 @@
+{
+  "name": "hdl-blockseal",
+  "displayName": "HDL BlockSeal",
+  "description": "Auto-inserts closing keywords (endmodule, end, endfunction, etc.) when you press Enter at the end of an opening block line. Supports Verilog, SystemVerilog, and VHDL.",
+  "version": "1.0.0",
+  "publisher": "VENOMNBB",
+  "icon": "icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VENOMNBB/HDL-BlockSeal"
+  },
+  "bugs": {
+    "url": "https://github.com/VENOMNBB/HDL-BlockSeal/issues"
+  },
+  "homepage": "https://github.com/VENOMNBB/HDL-BlockSeal#readme",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "Verilog",
+    "SystemVerilog",
+    "VHDL",
+    "autocomplete",
+    "snippet"
+  ],
+  "activationEvents": [
+    "onLanguage:verilog",
+    "onLanguage:systemverilog",
+    "onLanguage:vhdl"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "HDL BlockSeal",
+      "properties": {
+        "hdlBlockSeal.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable the extension entirely."
+        },
+        "hdlBlockSeal.enableVerilog": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable for Verilog (.v) files."
+        },
+        "hdlBlockSeal.enableSystemVerilog": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable for SystemVerilog (.sv / .svh) files."
+        },
+        "hdlBlockSeal.enableVHDL": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable for VHDL (.vhd / .vhdl) files."
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@vscode/test-electron": "^2.4.0",
+    "glob": "^10.3.0",
+    "mocha": "^10.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
