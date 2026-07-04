@@ -1,5 +1,8 @@
 # HDL BlockSeal
 
+[![vscode marketplace](https://img.shields.io/badge/VS%20Code-HDL_BlockSeal-blue)](https://marketplace.visualstudio.com/items?itemName=VENOMNBB.hdl-blockseal)
+[![github](https://img.shields.io/badge/GitHub-HDL_BlockSeal-blue)](https://github.com/VENOMNBB/HDL-BlockSeal)
+
 **HDL BlockSeal** is a VS Code extension that automatically inserts the matching closing keyword whenever you press **Enter** at the end of an opening block line in a hardware description language file. It works for **Verilog**, **SystemVerilog**, and **VHDL**, respects your indentation settings, and is smart enough not to insert a duplicate if the closing keyword is already present.
 
 ---
