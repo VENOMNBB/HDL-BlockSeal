@@ -2,7 +2,7 @@
   "name": "hdl-blockseal",
   "displayName": "HDL BlockSeal",
   "description": "Auto-inserts closing keywords (endmodule, end, endfunction, etc.) when you press Enter at the end of an opening block line. Supports Verilog, SystemVerilog, and VHDL.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "VENOMNBB",
   "icon": "icon.png",
   "license": "MIT",
